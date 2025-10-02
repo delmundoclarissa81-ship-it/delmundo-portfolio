@@ -1,5 +1,5 @@
 # ABOUT ME
-Hello Iam clarissa del mundo and I am from BSIT-2A, I am learning to believe in myself more each day. It may be a slow process, but 
+Hello Iam clarissa del mundo and I am from BSIT-2A, I am learning to believe in myself more each day. It may be a slow process, but  I know that trusting my own abilities is the first step to growth. I remind myself that I have the strength to overcome challenges, and that every step forward, no matter how small, is still progress. I will continue to push forward because I know my future depends on my persistence. Believing in myself gives me the courage to face difficulties and the hope to keep moving toward my dreams. No matter how hard the journey may get, I choose to continue and never give up on myself.
 
 # PORFOLIO SECTIONS
 * ABOUT
