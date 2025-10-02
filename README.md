@@ -5,7 +5,7 @@ Hello Iam clarissa del mundo and I am from BSIT-2A, I am learning to believe in 
 * ABOUT
 * ACTIVITIES
 * CONTACT
-# lIVE Site
+# live Site
 My Portfolio:  https://delmundoclarissa81-ship-it.github.io/delmundo-portfolio/
 # Technology Used
 *Github
