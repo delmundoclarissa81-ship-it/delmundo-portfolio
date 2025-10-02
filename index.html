@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Del Mundo, Clarissa</h1>
+      <nav>
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section active">
+      <div class="container about-content">
+        <img id="profile" src="./image/Screenshot_20240827-081652.png" alt="Profile Picture" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello Iam clarissa del mundo and I am from BSIT-2A, I am learning to believe in myself more each day. It may be a slow process, but I know that trusting my own abilities is the first step to growth. I remind myself that I have the strength to overcome challenges, and that every step forward, no matter how small, is still progress. I will continue to push forward because I know my future depends on my persistence. Believing in myself gives me the courage to face difficulties and the hope to keep moving toward my dreams. No matter how hard the journey may get, I choose to continue and never give up on myself.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities" class="section">
+      <div class="container">
+        <h2>Activities</h2>
+        <div class="activity-grid">
+          <div class="activity-card">
+            <img src="./image/Screenshot_20240827-081652.png" alt="Activity 1" class="clickable-image" data-large="">
+            <p>Activity #1</p>
+          </div>
+          <div class="activity-card">
+            <img src="" alt="Activity 2" class="clickable-image" data-large="./img/1000025450.jpg">
+            <p>Activity #2</p>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:delmundoclarissa81@gmail.com">delmundoclarissa81@gmail.com</a></p>
+        <p>Facebook: <target="_blank">TATA</a></p>
+        <p>Contact No. 09633588765</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Del Mundo, CLarissa H . All rights reserved.</p>
+    </div>
+  </footer>
+
+ 
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script>
+   
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section');
+   
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+       
+       
+        sections.forEach(section => section.classList.remove('active'));
+
+       
+        const targetID = this.getAttribute('href').substring(1);
+
+       
+        document.getElementById(targetID).classList.add('active');
+      });
+    });
+
+   
+    const images = document.querySelectorAll('.clickable-image');
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.querySelector('.close');
+
+    images.forEach(image => {
+      image.addEventListener('click', function () {
+        const largeImageUrl = this.getAttribute('data-large');
+        modalImage.src = largeImageUrl;
+        modal.style.display = 'block';
+      });
+    });
+
+   
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+   
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+  <script url="./script.js"></script>
+</body>
+</html>
